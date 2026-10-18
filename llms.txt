@@ -1,0 +1,18 @@
+# autoreview
+
+> 自动代码审查技能：使用 AI 对代码变更进行深度审查，生成结构化报告，覆盖安全漏洞、代码规范、性能问题、可维护性。
+
+`autoreview` 是 SynomosAI 生态的一个 Agent Skill，面向 PR review 与本地变更的自动化审查。
+
+## 核心
+
+- [README.md](https://github.com/SynomosAI/autoreview/blob/main/README.md): 项目说明与快速开始
+- [SKILL.md](https://github.com/SynomosAI/autoreview/blob/main/SKILL.md): 技能主文件（审查流程 / 提示词 / 报告格式）
+- [LICENSE.md](https://github.com/SynomosAI/autoreview/blob/main/LICENSE.md): MIT License
+
+## 可选
+
+- [llms-full.txt](https://github.com/SynomosAI/autoreview/blob/main/llms-full.txt): 完整文本
+- [AGENTS.md](https://github.com/SynomosAI/autoreview/blob/main/AGENTS.md): Agent 工作指引
+- [SECURITY.md](https://github.com/SynomosAI/autoreview/blob/main/SECURITY.md): 安全策略
+- [README.en.md](https://github.com/SynomosAI/autoreview/blob/main/README.en.md): 英文版说明
