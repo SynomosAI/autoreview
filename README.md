@@ -61,6 +61,18 @@ git diff main...HEAD
   → 开发者按建议修改
 ```
 
+## 审查报告示例
+
+```text
+文件：src/auth/login.js
+  🔴 [安全] 第 42 行：SQL 拼接注入风险
+     风险：攻击者可通过用户名参数执行任意 SQL
+     建议：改用参数化查询 db.query("SELECT * FROM users WHERE id = ?", [userId])
+  🟡 [性能] 第 88 行：循环内发起数据库查询（N+1）
+     建议：改为批量查询后内存匹配
+  💭 [可维护性] 第 120 行：函数超过 50 行，建议拆分
+```
+
 ## 仓库结构 / Repository layout
 
 ```text
