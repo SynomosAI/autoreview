@@ -55,6 +55,18 @@ jobs:
             echo "no actions.lock in this repo - preflight skipped"
           fi
 
+      - name: Detect skill layout (root-skill repos need an explicit switch)
+        run: |
+          set -euo pipefail
+          cd repo
+          # 单技能仓：SKILL.md 在仓库根、且没有任何子目录再带 SKILL.md
+          if [ -f SKILL.md ] && ! find . -mindepth 2 -name SKILL.md -not -path './.git/*' | grep -q .; then
+            echo "layout=root-skill (SKILL.md at repository root)"
+            echo "SKILLLOCK_ALLOW_ROOT=1" >> "$GITHUB_ENV"
+          else
+            echo "layout=multi-skill (skills live in sub-directories)"
+          fi
+
       - name: Verify the skills lock
         run: |
           set -euo pipefail
