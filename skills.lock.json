@@ -1,0 +1,23 @@
+{
+  "algorithm": "sha256(sorted relpath + NUL + file sha256, per line)",
+  "history": [
+    {
+      "root_digest": "edf44c84abccf2b73e53bb49fc5b4e4b46354990cebcfe0da2c61059e30abb11",
+      "sequence": 1
+    }
+  ],
+  "root_digest": "edf44c84abccf2b73e53bb49fc5b4e4b46354990cebcfe0da2c61059e30abb11",
+  "schema_version": 2,
+  "sequence": 1,
+  "skill_count": 1,
+  "skills": [
+    {
+      "declared_name": "autoreview",
+      "digest": "ac1c2d6dc836b64cd17a00fb4dcd3fc22e4aa9444a631d8cfbf18d731276420d",
+      "file_count": 1,
+      "has_description": true,
+      "path": "."
+    }
+  ],
+  "validated_against": []
+}
